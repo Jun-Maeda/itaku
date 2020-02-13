@@ -12,7 +12,7 @@ class itaku_bonus:
         return self.name
 
     def sum(self):
-        with open(file_path, newline='', encoding='cp932') as csvfile:
+        with open(file_path, newline='', encoding='utf-8') as csvfile:
             kekka = 0
             # csvの最初の三行を飛ばすための処理
             next(csvfile)
